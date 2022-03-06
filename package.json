@@ -1,0 +1,33 @@
+{
+  "name": "gatsby-plugin-published",
+  "version": "1.0.0",
+  "description": "Gatsby plugin to add published and visible fields to MarkdownRemark nodes",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-transformer-plugin",
+    "markdown",
+    "draft",
+    "published"
+  ],
+  "author": "Paulo Menin <paulomenin@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/paulomenin/gatsby-plugin-published/issues"
+  },
+  "homepage": "https://github.com/paulomenin/gatsby-plugin-published",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulomenin/gatsby-plugin-published"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "peerDependencies": {
+    "gatsby": "^4.0.0"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.34"
+  }
+}
