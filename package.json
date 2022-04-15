@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-published",
-  "version": "1.0.0",
-  "description": "Gatsby plugin to add published and visible fields to MarkdownRemark nodes",
+  "version": "1.0.1",
+  "description": "Gatsby plugin to add published and visible fields to nodes",
   "license": "MIT",
   "keywords": [
     "gatsby",

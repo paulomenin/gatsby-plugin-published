@@ -1,6 +1,6 @@
 # gatsby-plugin-published
 
-Gatsby plugin to add `published` and `visible` fields to MarkdownRemark nodes.
+Gatsby plugin to add `published` and `visible` fields to nodes.
 
 The `published` field indicates if the node must be published in a Production build.
 It is true if the post is not marked as draft and the date of the post is not in a future date.
@@ -50,6 +50,8 @@ module.exports = {
         timezone: "UTC",
         // Force draft nodes to be visible
         makeDraftVisible: false,
+        // Valid nodes, any node type not in this list will be ignored
+        validNodes: ["MarkdownRemark", "Mdx"]
       },
     },
   ],

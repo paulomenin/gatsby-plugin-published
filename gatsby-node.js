@@ -7,6 +7,7 @@ const defaultOptions = {
   publishedFieldName: "published",
   timezone: "UTC",
   makeDraftVisible: process.env.NODE_ENV !== "production",
+  validNodes: ["MarkdownRemark", "Mdx"],
 }
 
 exports.onCreateNode = ({ node, actions }, pluginOptions) => {
@@ -17,7 +18,7 @@ exports.onCreateNode = ({ node, actions }, pluginOptions) => {
     ...pluginOptions,
   }
 
-  if (node.internal.type !== "MarkdownRemark") {
+  if (!options.validNodes.includes(node.internal.type)) {
     return
   }
 
